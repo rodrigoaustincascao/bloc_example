@@ -20,6 +20,24 @@ class HomePage extends StatelessWidget {
                   style: Theme.of(context).textTheme.headlineMedium,
                 ),
               ),
+              TextButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed("/example_freezed");
+                },
+                child: Text(
+                  "Example Freezed",
+                  style: Theme.of(context).textTheme.headlineMedium,
+                ),
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed("/contacts_list");
+                },
+                child: Text(
+                  "Contacts",
+                  style: Theme.of(context).textTheme.headlineMedium,
+                ),
+              ),
             ],
           ),
         ),
